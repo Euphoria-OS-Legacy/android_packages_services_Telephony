@@ -38,7 +38,7 @@ final class GsmConnection extends TelephonyConnection {
     private boolean mRemoteIncomingCallsBarred;
 
     GsmConnection(Connection connection, boolean isForwarded) {
-        super(connection);
+        super(null);
         mIsForwarded = isForwarded;
         setCallProperties(computeCallProperties());
     }
